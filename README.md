@@ -5,7 +5,7 @@ In this progressive web application, the user has the capability to use a text e
 
 
 ## How to use
-Once the code has loaded, simply open up the intergrated terminal and type the command `npm i` to install the node.js app dependecies. Secondly, type the command `npm run build` to build the application. Lastly, type the command `npm run start:dev` to initiate the server.
+Once the code has loaded, simply open up the intergrated terminal and type the command `npm i` to install the app dependecies. Secondly, type the command `npm run build` to build the application. Lastly, type the command `npm run start:dev` to initiate the server.
 
 ## At a Glance
 ![2023-05-01](https://user-images.githubusercontent.com/117941643/235572765-9f8ddbc3-cb54-4744-9dfa-1849ef30dbf8.png)
