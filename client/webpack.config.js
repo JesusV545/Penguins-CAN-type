@@ -19,10 +19,12 @@ module.exports = () => {
         template: './index.html',
         title: 'J.A.T.E'
       }),
+
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -32,13 +34,13 @@ module.exports = () => {
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',
-        publicPath: '/assets/icons',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: 'assets/icons',
-          },
+            destination: path.join('assets', 'icons'),
+          }
         ],
       }),
     ],
@@ -51,12 +53,15 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          include: path.resolve(__dirname, 'src'),
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: [
+                '@babel/plugin-proposal-object-rest-spread', 
+                '@babel/transform-runtime'
+              ],
             },
           },
         },
