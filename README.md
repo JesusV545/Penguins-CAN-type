@@ -1,4 +1,4 @@
-# Penguina CAN type [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Penguins CAN type [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 In this progressive web application, the user has the capability to use a text editor straight from the browser. The user is able to use this application offline. Features such as service workers and indexedDB are used to make the application experience smoother and more efficient.
